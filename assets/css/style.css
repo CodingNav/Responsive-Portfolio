@@ -14,6 +14,7 @@
 }
 /* Style the links inside the navigation bar */
 nav {
+    width: 270px;
     float: right;
     padding: 20px 16px;
     color: #777777;
@@ -71,7 +72,6 @@ body {
     padding: 10px 10px 30px 10px;
     margin: 0px 0px 25px 0px;
     border-bottom: 4px solid #dddddd ;
-
 }
 
 
@@ -98,7 +98,8 @@ body {
 #image {
     object-fit: cover;
 }
-.container {
+
+.image-container {
     position: relative;
     text-align: center;
     color: #ffffff;
@@ -130,7 +131,7 @@ form {
 
 /* Formatting the input size for name and email */
 form input {
-    width: 940px;
+    width: 98%;
     height: 25px;
     margin-bottom: 15px;
     padding: 5px 10px;
@@ -139,7 +140,7 @@ form input {
 
 /* Styling message input */
 form textarea {
-    width: 940px;
+    width: 98%;
     height: 200px;
     padding: 5px 10px;
     border-color: #dddddd;
@@ -174,3 +175,35 @@ footer {
     /* height of footer is 60, therefore 60+60 = 120px */
     min-height: calc(100vh - 120px);
   }
+
+
+  @media (max-width: 980px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+/* Navbar mobile responsiveness */
+.topnav {
+    width: 100%;
+}
+
+nav {
+    width: 40%;
+}
+
+#name {
+    margin-left: 5%;
+}
+
+/* About page main content mobile responsiveness */
+.main-content {
+    width: 80%;
+    margin: 5%;
+}
+
+/* Portfolio page main content mobile responsiveness */
+.image-container {
+    padding: 20px;
+}
+    }
