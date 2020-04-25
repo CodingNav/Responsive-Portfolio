@@ -1,24 +1,27 @@
 /* Made all contact go into 960px width */
+
 .wrapper {
     margin: auto;
     width: 960px;
 }
 
 /* NAVBAR STYLING */
+
 /* Add a background color and bottom border to the top navigation */
+
 .topnav {
     background-color: #ffffff;
     border-bottom: 2px solid transparent;
     border-bottom-color: #dddddd;
     height: 60px;
 }
+
 /* Style the links inside the navigation bar */
+
 nav {
-    width: 270px;
     float: right;
     padding: 20px 16px;
     color: #777777;
-  
 }
 
 nav a {
@@ -28,20 +31,21 @@ nav a {
     text-decoration: none;
     font-size: 15px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  }
-  
-  
-  /* Change the color of links on hover */
- nav a:hover {
+}
+
+/* Change the color of links on hover */
+
+nav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Style the name */
+}
+
+/* Style the name */
+
 #name {
     background-color: #4aaaa5;
     padding: 16px;
-    color: #ffffff; 
+    color: #ffffff;
     font-weight: bold;
     font-size: 25px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -50,13 +54,16 @@ nav a {
 }
 
 /* Added a background to the page */
+
 body {
     background-image: url(../images/background.png);
     margin: 0px;
 }
 
 /* OVERALL ALL PAGES STYLING */
+
 /* Adding background and border to main content */
+
 .main-content {
     background-color: #ffffff;
     margin-top: 40px;
@@ -66,20 +73,22 @@ body {
 }
 
 /* Styling all headers */
+
 #main-heading {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #4aaaa5;
     padding: 10px 10px 30px 10px;
     margin: 0px 0px 25px 0px;
-    border-bottom: 4px solid #dddddd ;
+    border-bottom: 4px solid #dddddd;
 }
 
-
 /* ABOUT PAGE STYLING */
+
 /* Wrapping content around image */
+
 #profile-pic {
-    float: left; 
-    padding: 10px;
+    float: left;
+    padding: 10px 10px 10px 0px;
 }
 
 #main-paragraph {
@@ -95,6 +104,7 @@ body {
 }
 
 /* PORTFOLIO PAGE STYLING */
+
 #image {
     object-fit: cover;
 }
@@ -105,31 +115,34 @@ body {
     color: #ffffff;
     display: inline-block;
     padding: 30px;
-  }
-  
-  /* Style image description */
+}
+
+/* Style image description */
+
 .description {
     position: absolute;
     top: 73%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #4aaaa5;
-    padding:17px 0px;
+    padding: 17px 0px;
     width: 250px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-size: 20px;
-  }
+}
 
-  /* CONTACT PAGE STYLING */
+/* CONTACT PAGE STYLING */
 
 /* Styling for titles above */
+
 form {
-      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-      color: #777777;
-      line-height: 30px;
-  }
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    line-height: 30px;
+}
 
 /* Formatting the input size for name and email */
+
 form input {
     width: 98%;
     height: 25px;
@@ -139,6 +152,7 @@ form input {
 }
 
 /* Styling message input */
+
 form textarea {
     width: 98%;
     height: 200px;
@@ -147,6 +161,7 @@ form textarea {
 }
 
 /* Changing format of button */
+
 form button {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
@@ -156,10 +171,12 @@ form button {
 }
 
 /* FOOTER */
+
 /* Styling and positioning for footer */
+
 footer {
     border-top: 7px solid #4aaaa5;
-    background-color:#666666;
+    background-color: #666666;
     position: absolute;
     height: 40px;
     width: 100%;
@@ -174,36 +191,64 @@ footer {
     /* vh means viewheight, basically 100vh = 100% of your screen while 50vh would be 50% of screen etc */
     /* height of footer is 60, therefore 60+60 = 120px */
     min-height: calc(100vh - 120px);
-  }
+}
 
-
-  @media (max-width: 980px) {
-
+@media (max-width: 980px) {
     .wrapper {
         width: 100%;
     }
-
-/* Navbar mobile responsiveness */
-.topnav {
-    width: 100%;
-}
-
-nav {
-    width: 40%;
-}
-
-#name {
-    margin-left: 5%;
-}
-
-/* About page main content mobile responsiveness */
-.main-content {
-    width: 80%;
-    margin: 5%;
-}
-
-/* Portfolio page main content mobile responsiveness */
-.image-container {
-    padding: 20px;
-}
+    /* Navbar mobile responsiveness */
+    .topnav {
+        width: 100%;
     }
+    nav {
+        width: 44%;
+    }
+    #name {
+        margin-left: 5%;
+    }
+    /* About page main content mobile responsiveness */
+    .main-content {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Portfolio page main content mobile responsiveness */
+    .image-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+
+        /* Navbar mobile responsiveness */
+        .topnav {
+            background-color: #4aaaa5;
+            text-align: center;
+        }
+        #name {
+            margin: 0px;
+        }
+        nav {
+            position: static;
+            width: 100%;
+            padding: 20px 0px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-bottom: 2px solid transparent;
+            border-bottom-color: #dddddd;
+        }
+
+    /* Main content mobile responsiveness */
+    .main-content {
+        width: 80%;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
