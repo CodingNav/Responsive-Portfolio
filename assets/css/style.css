@@ -222,26 +222,24 @@ footer {
 }
 
 @media (max-width: 660px) {
-
-        /* Navbar mobile responsiveness */
-        .topnav {
-            background-color: #4aaaa5;
-            text-align: center;
-        }
-        #name {
-            margin: 0px;
-        }
-        nav {
-            position: static;
-            width: 100%;
-            padding: 20px 0px;
-            margin-bottom: 20px;
-            text-align: center;
-            background-color: #ffffff;
-            border-bottom: 2px solid transparent;
-            border-bottom-color: #dddddd;
-        }
-
+    /* Navbar mobile responsiveness */
+    .topnav {
+        background-color: #4aaaa5;
+        text-align: center;
+    }
+    #name {
+        margin: 0px;
+    }
+    nav {
+        position: static;
+        width: 100%;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        border-bottom: 2px solid transparent;
+        border-bottom-color: #dddddd;
+    }
     /* Main content mobile responsiveness */
     .main-content {
         width: 80%;
@@ -249,6 +247,4 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-
-
 }
